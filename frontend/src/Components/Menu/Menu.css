@@ -1,0 +1,29 @@
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+
+.menu-item .menu-number{
+    list-style-type: none;
+    width: 6px;
+    height: 16px;
+    font-size: 12px;
+    font-weight: 600;
+    font-family:  'SF Pro Display', sans-serif;
+    line-height: 16px;
+    color: #000000;
+}
+.menu-item .menu-list{
+    list-style-type: none;
+    width: 60px;
+    height: 24px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #000000;
+    font-family:  'SF Pro Display', sans-serif;
+}
+.menu-item  a{
+    text-decoration: none;
+}
+.menu-item{
+    width: 60px;
+    height: 40px;
+}
