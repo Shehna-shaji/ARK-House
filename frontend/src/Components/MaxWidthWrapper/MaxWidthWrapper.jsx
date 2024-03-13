@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
+import './MaxWidthWrapper.css';
 
 const MaxWidthWrapper = ({children}) => {
   return (
-    <div style={{padding:"0px 120px 0px 120px"}}>
+    <div className='max-wrapper'>
         {children}
       
     </div>
