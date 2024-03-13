@@ -1,27 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Header.css";
 import ARKLogo from "../../assets/ARKLogo.png";
 import Menu from "../Menu/Menu";
+import { FiAlignJustify } from "react-icons/fi";
 
 export default function Header() {
+  const [isOpen, setIsOpen] = useState(true);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <div className="header">
-      <div className="header-container">
+    <header className="header">
+      <div className={isOpen === true ? "header-container" : "header-items"}>
         <div className="header-logo">
           <img src={ARKLogo} className="logo-img" />
         </div>
-        <div className="menu-container">
-          <Menu number={1} menu="About" />
-          <Menu number={2} menu="Services" />
-          <Menu number={3} menu="Projects" />
-          <Menu number={4} menu="Team" />
-          <Menu number={5} menu="Blog" />
 
+        <div className={isOpen === true ? "menu-container" : "menu"}>
+          <Menu />
         </div>
-        <button className="nav-menu">Menu</button>
-      </div>
 
+        <span className="nav-menu" onClick={toggleMenu}>
+          <FiAlignJustify />
+        </span>
+      </div>
       <hr />
-    </div>
+    </header>
   );
 }

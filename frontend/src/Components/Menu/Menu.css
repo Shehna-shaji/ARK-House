@@ -1,29 +1,60 @@
-@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+.menu-item a {
+  text-decoration: none;
+  color: #000000;
+}
+.menu-item span {
+  display: flex;
+  flex-direction: column;
+}
 
-.menu-item .menu-number{
-    list-style-type: none;
-    width: 6px;
-    height: 16px;
-    font-size: 12px;
-    font-weight: 600;
-    font-family:  'SF Pro Display', sans-serif;
-    line-height: 16px;
-    color: #000000;
+.menu-item {
+  /* display: none; */
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
 }
-.menu-item .menu-list{
-    list-style-type: none;
-    width: 60px;
-    height: 24px;
+.menu-number {
+  width: 6px;
+  height: 16px;
+  font-size: 12px;
+  font-weight: 600;
+
+  line-height: 16px;
+  color: #000000;
+}
+.menu-list:active {
+  font-weight: 600;
+}
+.menu-list {
+  font-size: 20px;
+}
+
+@media (min-width: 270px) {
+  .menu-item {
+    flex-direction: column;
+    padding: 50px;
+    padding-top: 20px;
+    gap: 20px;
+  }
+  .menu-list {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 640px) {
+  .menu-item {
+    /* padding: 20px; */
+  }
+}
+
+@media (min-width: 768px) {
+  .menu-item {
+    flex-direction: row;
+    gap: 32px;
+    padding: 0px;
+    /* padding-top: 0px; */
+  }
+  .menu-list {
     font-size: 20px;
-    font-weight: 600;
-    line-height: 24px;
-    color: #000000;
-    font-family:  'SF Pro Display', sans-serif;
-}
-.menu-item  a{
-    text-decoration: none;
-}
-.menu-item{
-    width: 60px;
-    height: 40px;
+  }
 }
