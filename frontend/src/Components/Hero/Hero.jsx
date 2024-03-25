@@ -27,7 +27,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <center>
+        
           {" "}
           <div className="bg-color">
             <img src={heroimage} className="hero-img" />
@@ -35,7 +35,7 @@ const Hero = () => {
         
         </div> */}
           </div>
-        </center>
+        
       </div>
     </MaxWidthWrapper>
   );
