@@ -1,19 +1,18 @@
-.social-icon{
-    display: flex;
-    gap: 32px;
+.social-icon {
+  display: flex;
+  gap: 32px;
 }
-.icon-img{
-    width: 24px;
-    height: 24px;
+.icon-img {
+  width: 24px;
+  height: 24px;
 }
 
-@media(min-width:350px) and (max-width:639px) {
-
-    .social-icon{
-        gap: 20px;
-    }
-    .icon-img{
-        width:16px;
-        height: 16px;
-    }
+@media (min-width: 350px) and (max-width: 767px) {
+  .social-icon {
+    gap: 20px;
+  }
+  .icon-img {
+    width: 14px;
+    height: 14px;
+  }
 }
