@@ -12,8 +12,8 @@ const Hero = () => {
        
       <div className="hero-section">
         <div className="hero-left">
-          <h2 className="subtitle">Since 1975 — </h2>
-          <h2 className="hero-text">Architecture. Planning. Design.</h2>
+          <h6 className="subtitle">Since 1975 — </h6>
+          <h2 className="hero-text">Architecture.<br/> Planning.<br/> Design.</h2>
         </div>
         <div className="hero-right">
           <div className="hero-btn">
@@ -24,11 +24,13 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="bg-color">
-        <div className="background">
-          <img src={heroimage} className="hero-img"/>
-        </div>
+     <center> <div className="bg-color">
+     <img src={heroimage} className="hero-img"/>
+        {/* <div className="background">
+        
+        </div> */}
       </div>
+      </center>
     
     </div>
     </MaxWidthWrapper>

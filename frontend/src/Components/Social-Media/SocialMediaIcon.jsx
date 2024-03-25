@@ -14,8 +14,9 @@ const SocialMediaIcon = () => {
     }
   return (
     <div className='social-icon'>
-         {socialmedia.map(({image,classname},i)=>{
-            return <SocialMedia key={i} image={image} className={classname}/>
+         {socialmedia.map(({image,className},i)=>{
+          
+            return <SocialMedia key={i} image={image} className={className}/>
          })}
 
       
