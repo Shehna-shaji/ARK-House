@@ -8,7 +8,7 @@ import MaxWidthWrapper from "../MaxWidthWrapper/MaxWidthWrapper";
 const Hero = () => {
   return (
     <MaxWidthWrapper>
-      <div className="hero">
+      <section className="hero">
         <div className="hero-section">
           <div className="hero-left">
             <h6 className="subtitle">Since 1975 — </h6>
@@ -26,17 +26,14 @@ const Hero = () => {
               <SocialMediaIcon />
             </div>
           </div>
-        </div>
-        
-          {" "}
-          <div className="bg-color">
-            <img src={heroimage} className="hero-img" />
-            {/* <div className="background">
+        </div>{" "}
+        <div className="bg-color">
+          <img src={heroimage} className="hero-img" />
+          {/* <div className="background">
         
         </div> */}
-          </div>
-        
-      </div>
+        </div>
+      </section>
     </MaxWidthWrapper>
   );
 };

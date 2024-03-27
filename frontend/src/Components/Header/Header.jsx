@@ -12,6 +12,7 @@ export default function Header() {
   };
 
   return (
+    
     <header className="header">
       <div className={isOpen === true ? "header-container" : "header-items"}>
         <div className="header-logo">

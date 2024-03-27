@@ -4,9 +4,9 @@ import './Home.css'
 
 const Home = () => {
   return (
-    <div className='parent'>
+    <header className='parent'>
       <Hero/>
-    </div>
+    </header>
   )
 }
 

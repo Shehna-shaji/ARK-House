@@ -1,4 +1,10 @@
-.parent{
-    width: 100%;
-    
+.parent {
+  width: 100%;
+}
+
+@media (min-width: 1580px) {
+  .parent {
+    max-width: 1900px;
+    margin: auto;
+  }
 }
