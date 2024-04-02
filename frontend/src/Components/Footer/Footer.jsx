@@ -19,7 +19,9 @@ const Footer = () => {
       <Heading title="Start a Project?" text="Contact Us" />
       <div className="footer-container">
         <div className="footer-left">
-          <h3 className="footer-title">Support is available <br/> 24 hours</h3>
+          <h3 className="footer-title">
+            Support is available <br /> 24 hours
+          </h3>
           <Button text="Contact Us" />
         </div>
         <div className="footer-right">
@@ -49,15 +51,12 @@ const Footer = () => {
             );
           })}
         </div>
-        
-
       </div>
       <div className="menu-social-media">
-        
-        <Menu/>
-        <SocialMediaIcon/>
+        <Menu />
+        <SocialMediaIcon />
       </div>
-      <hr/>
+      <hr />
       <div className="copy-right-privacy">
         <div className="copy-right">
           <div className="copy-right-icon">
@@ -70,7 +69,6 @@ const Footer = () => {
         <div className="privacy">
           <h6 className="privacy-text">Terms of Use | Privacy</h6>
         </div>
-
       </div>
     </footer>
   );
