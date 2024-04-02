@@ -17,9 +17,9 @@
   border: none;
 
   font-family: "SF Pro Display", sans-serif;
-  width: 100%;
+  width: auto;
   height: auto;
-  padding: 4px 4px 4px 20px;
+  padding: 4px 4px 6px 20px;
   font-size: 10px;
 }
 
@@ -44,8 +44,8 @@
 @media (min-width:768px){
   .button button{
     padding: 4px 4px 4px 35px;
-    width: 147px;
-    height: 38px;
+    /* width: 147px;
+    height: 38px; */
     font-size: 12px;
   }
   .arrow-frame{
@@ -63,8 +63,8 @@
 @media (min-width: 1024px) {
   .button button {
     padding: 4px 4px 4px 32px;
-    width: 178px;
-    height: 48px;
+    /* width: 178px;
+    height: 48px; */
     font-size: 16px;
   }
   .arrow-frame {

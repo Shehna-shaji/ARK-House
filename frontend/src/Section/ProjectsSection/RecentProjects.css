@@ -1,0 +1,109 @@
+.projects-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+  padding: 56px 0px 0px 0px;
+}
+.project-img {
+  background-image: url("../../assets/imagelogo.png");
+  background-position: top 0px left 20px;
+  background-size: 60.43px 48px;
+  display: flex;
+
+  gap: 8px;
+  background-repeat: no-repeat;
+  padding: 12px 8px 12px 8px;
+}
+.classroom-img {
+  width: 330px;
+  height: 275px;
+}
+.Monson-img {
+  width: 300px;
+  height: 475px;
+}
+.Ecocenter-img {
+  width: 284px;
+  height: 271px;
+}
+.text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 61px;
+  align-items: center;
+}
+.number-img {
+  width: 280px;
+  height: 251px;
+}
+.img-text {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 64px;
+  text-align: center;
+}
+.Fulton-img {
+  width: 325px;
+  height: 371px;
+}
+.college-img {
+  width: 340px;
+  height: 407px;
+}
+.title-style {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+.place-text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+@media (min-width: 1280px) {
+  .project-card {
+    flex-direction: row;
+    gap: 64px;
+  }
+  .classroom-img {
+    width: 730px;
+    height: 575px;
+  }
+  .Monson-img {
+    width: 378px;
+    height: 575px;
+  }
+  .Ecocenter-img {
+    width: 664px;
+    height: 571.92px;
+  }
+  .text-container {
+    width: 580px;
+    height: 505px;
+  }
+  .number-img {
+    width: 480px;
+    height: 351px;
+  }
+  .img-text {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 64px;
+    text-align: center;
+  }
+  .Fulton-img {
+    width: 325px;
+    height: 371px;
+  }
+  .college-img {
+    width: 783px;
+    height: 607px;
+  }
+}

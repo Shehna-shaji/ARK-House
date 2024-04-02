@@ -27,7 +27,7 @@ export default function Header() {
           <FiAlignJustify />
         </span>
       </div>
-      <hr />
+      <hr className="menu-hr"/>
     </header>
   );
 }

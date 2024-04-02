@@ -3,11 +3,11 @@ import "./Hero.css";
 import Button from "../Button/Button";
 import SocialMediaIcon from "../Social-Media/SocialMediaIcon";
 import heroimage from "../../assets/HeroImage.png";
-import MaxWidthWrapper from "../MaxWidthWrapper/MaxWidthWrapper";
+
 
 const Hero = () => {
   return (
-    <MaxWidthWrapper>
+    
       <section className="hero">
         <div className="hero-section">
           <div className="hero-left">
@@ -33,8 +33,9 @@ const Hero = () => {
         
         </div> */}
         </div>
+        <hr/>
       </section>
-    </MaxWidthWrapper>
+  
   );
 };
 

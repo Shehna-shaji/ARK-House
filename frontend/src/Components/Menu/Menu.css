@@ -1,3 +1,6 @@
+
+
+
 .menu-item a {
   text-decoration: none;
   color: #000000;
@@ -10,7 +13,7 @@
 .menu-item {
   /* display: none; */
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   gap: 32px;
 }
 .menu-number {
@@ -27,6 +30,7 @@
 }
 .menu-list {
   font-size: 20px;
+  
 }
 
 @media (min-width: 250px) {
@@ -37,7 +41,7 @@
     gap: 20px;
   }
   .menu-list {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 
@@ -55,6 +59,6 @@
     /* padding-top: 0px; */
   }
   .menu-list {
-    font-size: 20px;
+    font-size: 18px;
   }
 }

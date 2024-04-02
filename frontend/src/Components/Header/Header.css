@@ -96,8 +96,8 @@
     width: 40px;
     height: 28px;
   }
-  hr {
-    /* display: none; */
+  .menu-hr {
+    display: none;
   }
 }
 
@@ -107,7 +107,7 @@
   }
   .header-items {
     align-items: flex-start;
-    height: 350px;
+    height: 380px;
   }
   .menu-container {
     display: none;
@@ -115,7 +115,7 @@
 
   .nav-menu {
     display: block;
-    /* left: 100vh; */
+    left: 80%;
     /* align-items: center; */
   }
 }
@@ -155,7 +155,7 @@
     width: 59.24px;
     height: 32px;
   }
-  hr {
+  .menu-hr {
     display: block;
   }
 }

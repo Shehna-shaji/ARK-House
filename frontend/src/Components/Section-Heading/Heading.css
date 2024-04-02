@@ -1,0 +1,37 @@
+
+
+.section-header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 210px 0px 24px 0px;
+}
+.section-title{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 52px;
+    color: #000000;
+}
+hr{
+    margin: 0px -20px 0px -20px;
+}
+
+@media(min-width:768px){
+    hr{
+        margin: 0px -60px 0px -60px;
+    }
+
+    .section-title{
+        font-size: 38px;
+    }
+}
+
+@media(min-width:1280px){
+    .section-title{
+        font-size: 48px;
+        line-height: 72px;
+}
+hr{
+    margin: 0px -40px 0px -40px;
+}
+}
