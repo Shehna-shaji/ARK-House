@@ -28,7 +28,7 @@ export default function Menu() {
         <HashLink>
           <Menu number={2} text="Services" />
         </HashLink>
-        <HashLink>
+        <HashLink to="#projects">
           <Menu number={3} text="Projects" />
         </HashLink>
         <HashLink>
