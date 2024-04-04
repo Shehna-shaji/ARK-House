@@ -11,20 +11,14 @@ import projectimages, {
 import Numbers from "../../assets/Numbers.png";
 import imagelogo from "../../assets/imagelogo.png";
 import Projectnumber from "../../assets/Projectnumber.png";
+import Button from "../../Components/Button/Button";
 const RecentProjects = () => {
   const styles = {
     width: "60.43px",
     height: "48px",
     position: "absolute",
   };
-  const Projects = ({
-    
-    name,
-    place,
-    className,
-    title_style,
-    place_style,
-  }) => {
+  const Projects = ({ name, place, className, title_style, place_style }) => {
     return (
       <span className="image-card">
         <div className="project-img">
@@ -148,6 +142,12 @@ const RecentProjects = () => {
             />
           );
         })}
+      </div>
+      <div className="title-btn">
+        <div className="start-project">Start a Project?</div>
+        <div className="contact-btn">
+          <Button text="Contact Us" />
+        </div>
       </div>
     </section>
   );

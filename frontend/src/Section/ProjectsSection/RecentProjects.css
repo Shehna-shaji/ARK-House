@@ -1,3 +1,6 @@
+@import url(https://db.onlinewebfonts.com/c/1c45e28f8e86cc89876f003b953cc3e9?family=SF+Pro+Text+Regular);
+
+
 .projects-section {
   display: flex;
   flex-direction: column;
@@ -9,7 +12,7 @@
   gap: 44px;
   padding: 56px 0px 0px 0px;
   
-  /* align-items: center; */
+  align-items: center;
   
 }
 .project-img {
@@ -33,7 +36,7 @@
   background-size: cover;
 }
 .Ecocenter-img {
-  width: 484px;
+  width: 284px;
   height: 271px;
   background-image: url("../../assets/Ecocenter.png");
   background-size: cover;
@@ -42,16 +45,16 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
-  margin-top: 61px;
+  /* margin-top: 61px; */
   align-items: center;
 }
 .number-img {
-  width: 280px;
-  height: 251px;
+  width: 140px;
+  height: 121px;
 }
 .img-text {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 30px;
   line-height: 64px;
   text-align: center;
 }
@@ -79,14 +82,14 @@
   line-height: 24px;
 }
 .Monument-img {
-  width: 404px;
+  width: 304px;
   height: 272px;
   background-image: url("../../assets/MonumentPlaza.png");
   background-size: cover;
 }
 .Jordan-img {
-  width: 444px;
-  height: 372px;
+  width: 344px;
+  height: 272px;
   background-image: url("../../assets/JordanLine.png");
   background-size:  cover;
   background-repeat: no-repeat;
@@ -108,11 +111,24 @@ background-size: cover;
 
 }
 .S-Line-img{
-  width: 364px;
-  height: 472px;
+  width: 344px;
+  height: 372px;
   background-image: url('../../assets/S-Line.png');
   background-size:  cover;
   background-repeat: no-repeat;
+}
+.title-btn{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 56px;
+  gap: 24px;
+}
+.start-project{
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 72px;
+  font-family: "SF Pro Text Regular";
 }
 
 
@@ -131,8 +147,8 @@ background-size: cover;
     height: 575px;
   }
   .Ecocenter-img {
-    width: 664px;
-    height: 571.92px;
+    width: 464px;
+    height: 471px;
   }
   .college-img {
     width: 553px;
@@ -158,6 +174,12 @@ background-size: cover;
     background-size: cover;
   }
   .Jordan-img{
+    
+  
+      width: 444px;
+      height: 472px;
+  
+  
     background-size: cover;
   }
   .S-Line-img{
@@ -170,10 +192,19 @@ background-size: cover;
 @media (min-width:1024px){
   .project-card{
     flex-direction: row;
+    margin: auto;
   }
   .classroom-img{
     width: 530px;
     height: 475px;
+  }
+  .Monson-img {
+    width: 278px;
+    height: 475px;
+  }
+  .college-img {
+    width: 480px;
+    height: 507px;
   }
   .Monument-img {
     width: 444px;
@@ -181,16 +212,31 @@ background-size: cover;
 }
 .Jordan-img{
   
-    width: 444px;
-    height: 472px;
+    width: 344px;
+    height: 372px;
 
 }
+.Ecocenter-img {
+  width: 564px;
+  height: 571.92px;
+}
+.Geology-img {
+  width: 225px;
+  height: 271px;
+}
 .S-Line-img{
-  width: 664px;
-  height: 572px;
+  width: 564px;
+  height: 472px;
+}
+.number-img {
+  width: 240px;
+  height: 251px;
 }
 .title-style{
   font-size: 20px;
+}
+.start-project{
+  font-size: 38px;
 }
 }
 @media (min-width: 1280px) {
@@ -206,10 +252,7 @@ background-size: cover;
     width: 378px;
     height: 575px;
   }
-  .Ecocenter-img {
-    width: 664px;
-    height: 571.92px;
-  }
+  
   .text-container {
     width: 580px;
     height: 505px;
@@ -220,7 +263,7 @@ background-size: cover;
   }
   .img-text {
     font-weight: 700;
-    font-size: 50px;
+    font-size: 54px;
     line-height: 64px;
     text-align: center;
   }
@@ -245,6 +288,14 @@ background-size: cover;
   .Jordan-img{
     width: 504px;
     height: 572px;
+  }
+
+  .Geology-img {
+    width: 325px;
+    height: 371px;
+  }
+  .start-project{
+    font-size: 48px;
   }
 
 

@@ -14,13 +14,11 @@ export default function App() {
         <MaxWidthWrapper>
           <Header />
 
-
-        <Routes>
-          <Route path="/" element={<Home />} />
-          {/* <Route path="/about" element={<About/>} /> */}
-          
-        </Routes>
-        <Footer/>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            {/* <Route path="/about" element={<About/>} /> */}
+          </Routes>
+          <Footer />
         </MaxWidthWrapper>
       </BrowserRouter>
     </div>
