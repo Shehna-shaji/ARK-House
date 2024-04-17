@@ -2,21 +2,28 @@
   display: flex;
   flex-direction: column;
 }
+
 .section-container {
   display: flex;
   flex-direction: column;
   padding: 56px 0px 0px 0px;
   gap: 48px;
 }
+.section-left{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  
+  /* align-items: center; */
+  
+}
 .number-description {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
 
   gap: 16px;
-  /* width: 377px;
-  height: 405px; */
 }
 
 .number {
@@ -26,9 +33,16 @@
 }
 .service-menu {
   display: flex;
-  /* gap: 20px; */
-  align-items: center;
+  gap: 20px;
+  /* align-items: center; */
   justify-content: center;
+  margin-top: 30px;
+}
+.section-right{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
 }
 .service-text {
   font-weight: 700;
@@ -41,72 +55,104 @@
   flex-direction: column;
 
   gap: 30px;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   /* margin-left: 88px; */
   /* padding: 60px 0px 60px 0px; */
 }
-.service-list li {
+.menu-text {
   list-style-type: none;
+  text-decoration: underline;
   cursor: pointer;
   font-size: 24px;
   font-weight: 500;
   line-height: 32px;
+  color: #000000;
 }
-.service-list li:active {
+.service-menu-text{
+  font-size: 24px;
+  font-weight: 500;
+}
+/* .menu-text::selection {
   text-decoration: underline;
   cursor: pointer;
   text-decoration-color: 1px solid black;
-}
+} */
 
 .service-image {
-  width: 360px;
+  width: 280px;
   height: 440px;
 }
 
 .service-description {
   display: flex;
   flex-direction: column;
-  padding: 0px 70px 0px 0px;
+  /* padding: 0px 70px 0px 0px; */
 
   align-items: flex-end;
   gap: 24px;
 }
 .service-description-text {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 18px;
+  font-weight: 500;
 }
 .text-btn-container {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  flex-wrap: wrap;
+}
+
+.service-menu-hr {
+  border: none;
+  width: 139px;
+  height: 1px;
+  background-color: #000000;
+  /* margin: 0px -10px 0px -10px; */
 }
 
 @media (min-width: 640px) {
-  .service-description {
-    padding: 0px 90px 0px 0px;
+  .service-list{
+    flex-direction: row;
+  }
+  .service-image{
+    width: 360px;
+    height: 440px;
+  }
+  .service-description-text{
+    font-size: 15px;
   }
 }
 @media (min-width: 768px) {
   .section-container {
     flex-direction: row;
-    margin: auto;
+    /* margin: auto; */
+  }
+  .section-left{
+    flex-direction: row;
+    gap: 48px;
+  }
+  .service-text {
+    font-size: 28px;
+    line-height: 50px;
   }
   .service-list {
+    flex-direction: column;
     gap: 40px;
   }
   .service-image {
-    width: 260px;
-    height: 340px;
+    width: 320px;
+    height: 440px;
   }
 
-  .service-list li {
-    font-size: 18px;
+  .menu-text {
+    font-size: 28px;
   }
   .service-description {
-    padding: 0px 0px 0px 80px;
+    /* padding: 0px 0px 0px 80px; */
   }
   .service-description-text {
-    font-size: 12px;
+    font-size: 13px;
     line-height: 20px;
   }
 }
@@ -115,7 +161,9 @@
   .section-container {
     flex-direction: row;
     margin: auto;
+    gap: 34px;
   }
+  
   .service-list {
     gap: 40px;
   }
@@ -124,41 +172,47 @@
     height: 225px;
   }
   .service-description {
-    padding: 0px 0px 0px 30px;
+    /* padding: 0px 0px 0px 30px; */
   }
 
   .service-description-text {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 20px;
   }
 }
 @media (min-width: 1280px) {
   .section-container {
     flex-direction: row;
-    margin: 0px;
+    /* margin: 0px; */
+    gap: 48px;
   }
   .number-description {
-    width: 477px;
-    height: 505px;
+    /* width: 450px;
+    height: 505px; */
+    margin-top: 67px;
   }
   .service-text {
     font-size: 46px;
+    line-height: 64px;
+  }
+  .service-menu{
+    margin-top: 80px;
   }
   .service-list {
     gap: 80px;
   }
-  .service-list li {
+  .menu-text {
     font-size: 24px;
   }
   .service-image {
-    width: 560px;
+    width: 500px;
     height: 640px;
   }
   .service-description {
-    padding: 0px 90px 0px 0px;
+    /* padding: 0px 90px 0px 0px; */
   }
   .service-description-text {
-    font-size: 20px;
+    font-size: 21px;
     line-height: 28px;
   }
 }
@@ -168,17 +222,17 @@
     margin: auto;
   }
   .number {
-    width: 289px;
+    width: 200px;
     height: 285px;
   }
-  .service-list li {
+  .menu-text {
     font-size: 30px;
   }
   .service-text {
     font-size: 46px;
   }
   .service-description {
-    padding: 0px 340px 0px 0px;
+    /* padding: 0px 340px 0px 0px; */
   }
 
   .service-description-text {

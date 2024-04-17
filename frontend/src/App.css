@@ -1,12 +1,15 @@
-@import url("https://fonts.cdnfonts.com/css/sf-pro-display");
+
+/* @import url(https://db.onlinewebfonts.com/c/1c45e28f8e86cc89876f003b953cc3e9?family=SF+Pro+Text+Regular); */
+@import url('https://v1.fontapi.ir/css/SFProDisplay');
 
 
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  font-family:  'SF Pro Display', sans-serif;
-  
+
+  /* font-family: "SF Pro Text Regular"; */
+  font-family: SF Pro Display, sans-serif;
   
 }
 

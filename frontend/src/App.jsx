@@ -5,7 +5,12 @@ import Header from "./Components/Header/Header";
 import Home from "./Pages/Home/Home";
 import Footer from "./Components/Footer/Footer";
 import MaxWidthWrapper from "./Components/MaxWidthWrapper/MaxWidthWrapper";
-import About from "./Section/AboutSection/About";
+
+import Ourhistory from "./Pages/Our history/Ourhistory";
+import Projects from "./Pages/Projects/Projects";
+import Breadcrumbs from "./Components/Breadcrumbs/Breadcrumbs";
+import CentralSaintGiles from "./Pages/Central Saint Giles/CentralSaintGiles";
+import Contact from "./Pages/Contact Page/Contact";
 
 export default function App() {
   return (
@@ -16,7 +21,14 @@ export default function App() {
 
           <Routes>
             <Route path="/" element={<Home />} />
-            {/* <Route path="/about" element={<About/>} /> */}
+
+            <Route path="/ourhistory" element={<Ourhistory />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route
+              path="/projects/CentralSaintGiles"
+              element={<CentralSaintGiles />}
+            />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
           <Footer />
         </MaxWidthWrapper>

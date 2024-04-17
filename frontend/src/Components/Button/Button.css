@@ -10,7 +10,7 @@
   color: #ffffff;
   text-align: center;
   /* font-size: 16px; */
-  font-weight: 600;
+  font-weight: 500;
   line-height: 20px;
   justify-content: center;
   align-items: center;
@@ -19,7 +19,7 @@
   font-family: "SF Pro Display", sans-serif;
   width: auto;
   height: auto;
-  padding: 4px 4px 6px 20px;
+  padding: 4px 4px 4px 28px;
   font-size: 10px;
 }
 
@@ -41,14 +41,14 @@
 
   background-color: #ffffff;
 }
-@media (min-width:768px){
-  .button button{
+@media (min-width: 768px) {
+  .button button {
     padding: 4px 4px 4px 35px;
     /* width: 147px;
     height: 38px; */
     font-size: 12px;
   }
-  .arrow-frame{
+  .arrow-frame {
     width: 30px;
     height: 30px;
     padding: 4px;
@@ -58,7 +58,6 @@
     height: 24px;
   }
 }
-
 
 @media (min-width: 1024px) {
   .button button {

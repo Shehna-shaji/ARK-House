@@ -1,0 +1,13 @@
+@import url('https://v1.fontapi.ir/css/SFProDisplay');
+*{
+    font-family: SF Pro Display, sans-serif;
+}
+
+
+
+@media(min-width:1580px){
+    .projects-page{
+        max-width: 1900px;
+        margin: auto;
+    }
+}

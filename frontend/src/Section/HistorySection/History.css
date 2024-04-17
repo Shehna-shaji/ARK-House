@@ -1,0 +1,44 @@
+.history-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-top: 56px;
+}
+.history-title {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 72px;
+}
+.history-image-text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.history-img {
+  width: 100%;
+}
+.history-content {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #000000;
+}
+
+@media (min-width: 768px) {
+  .history-content {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .history-title {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 1580px) {
+  .history-content {
+    font-size: 40px;
+    line-height: 40px;
+  }
+}

@@ -1,0 +1,67 @@
+/* @import url(https://db.onlinewebfonts.com/c/1c45e28f8e86cc89876f003b953cc3e9?family=SF+Pro+Text+Regular);
+*{
+    font-family: "SF Pro Text Regular";
+} */
+
+.project-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.project-heading {
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 50px;
+  color: #000000;
+}
+.project-subtitle {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 40px;
+  color: #000000;
+}
+.project-detail-description {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+@media (min-width: 768px) {
+  .project-heading {
+    font-size: 30px;
+  }
+  .project-subtitle {
+    font-size: 20px;
+  }
+
+  .project-detail-description {
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .project-heading {
+    font-size: 40px;
+  }
+  .project-subtitle {
+    font-size: 30px;
+  }
+  .project-detail-description {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1580px) {
+  .project-detail {
+    max-width: 1900px;
+    margin: auto;
+  }
+}

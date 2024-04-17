@@ -1,6 +1,7 @@
 import React from "react";
 import "./RecentProjects.css";
 import Heading from "../../Components/Section-Heading/Heading";
+import { useNavigate } from "react-router-dom";
 import projectimages, {
   project,
   projectphotos,
@@ -13,6 +14,7 @@ import imagelogo from "../../assets/imagelogo.png";
 import Projectnumber from "../../assets/Projectnumber.png";
 import Button from "../../Components/Button/Button";
 const RecentProjects = () => {
+  const navigate = useNavigate();
   const styles = {
     width: "60.43px",
     height: "48px",
@@ -35,37 +37,37 @@ const RecentProjects = () => {
   };
   return (
     <section id="projects" className="projects-section">
-      <Heading title="Recent Projects" text="Discover all" />
+      <Heading
+        title="Recent Projects"
+        text="Discover all"
+        onclick={() => navigate("/projects")}
+      />
 
       <div className="project-card">
-        {projectimages.map((item) => {
+        {projectimages.map(({ name, place, className, title_style, place_style },i) => {
           return (
             <Projects
-              key={item.id}
-              // image={item.image}
-              // style={{backgroundImage:`url(../../assests/${item.image}))`}}
-
-              name={item.name}
-              place={item.place}
-              className={item.className}
-              title_style={item.title_style}
-              place_style={item.place_style}
-              // css={{backgroundImage:`url(require(assests/${item.image}))`}}
+              key={i}
+              name={name}
+              place={place}
+              className={className}
+              title_style={title_style}
+              place_style={place_style}
             />
           );
         })}
       </div>
       <div className="project-card">
-        {recentprojects.map((item) => {
+        {recentprojects.map(({ name, place, className, title_style, place_style },i) => {
           return (
             <Projects
-              key={item.id}
-              image={item.image}
-              name={item.name}
-              place={item.place}
-              className={item.className}
-              title_style={item.title_style}
-              place_style={item.place_style}
+              key={i}
+              
+              name={name}
+              place={place}
+              className={className}
+              title_style={title_style}
+              place_style={place_style}
             />
           );
         })}
@@ -79,44 +81,44 @@ const RecentProjects = () => {
         </div>
       </div>
       <div className="project-card">
-        {recentimages.map((img) => {
+        {recentimages.map(({ name, place, className, title_style, place_style },i) => {
           return (
             <Projects
-              key={img.id}
-              image={img.image}
-              name={img.name}
-              place={img.place}
-              className={img.className}
-              title_style={img.title_style}
-              place_style={img.place_style}
+              key={i}
+              
+              name={name}
+              place={place}
+              className={className}
+              title_style={title_style}
+              place_style={place_style}
             />
           );
         })}
       </div>
       <div className="project-card">
-        {projectphotos.map((img) => {
+        {projectphotos.map(({ name, place, className, title_style, place_style },i) => {
           return (
             <Projects
-              key={img.id}
-              name={img.name}
-              place={img.place}
-              className={img.className}
-              title_style={img.title_style}
-              place_style={img.place_style}
+              key={i}
+              name={name}
+              place={place}
+              className={className}
+              title_style={title_style}
+              place_style={place_style}
             />
           );
         })}
       </div>
       <div className="project-card">
-        {projectplan.map((img) => {
+        {projectplan.map(({ name, place, className, title_style, place_style },i) => {
           return (
             <Projects
-              key={img.id}
-              name={img.name}
-              place={img.place}
-              className={img.className}
-              title_style={img.title_style}
-              place_style={img.place_style}
+              key={i}
+              name={name}
+              place={place}
+              className={className}
+              title_style={title_style}
+              place_style={place_style}
             />
           );
         })}
@@ -127,18 +129,18 @@ const RecentProjects = () => {
             <img src={Projectnumber} className="number-img" />
           </div>
           <div>
-            <h2 className="img-text">With over 2.600 projects completed</h2>
+            <h2 className="img-text">With over 2.500 projects completed</h2>
           </div>
         </div>
-        {project.map((img) => {
+        {project.map(({ name, place, className, title_style, place_style },i) => {
           return (
             <Projects
-              key={img.id}
-              name={img.name}
-              place={img.place}
-              className={img.className}
-              title_style={img.title_style}
-              place_style={img.place_style}
+              key={i}
+              name={name}
+              place={place}
+              className={className}
+              title_style={title_style}
+              place_style={place_style}
             />
           );
         })}
@@ -146,7 +148,7 @@ const RecentProjects = () => {
       <div className="title-btn">
         <div className="start-project">Start a Project?</div>
         <div className="contact-btn">
-          <Button text="Contact Us" />
+          <Button text="Contact Us" onclick={()=>navigate('/contact')}/>
         </div>
       </div>
     </section>

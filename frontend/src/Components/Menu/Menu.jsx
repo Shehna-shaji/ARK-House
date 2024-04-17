@@ -19,23 +19,20 @@ export default function Menu() {
   return (
     <div>
       <div className="menu-item">
-        {/* {menu.map(({ number, text }, i) => {
-          return <Menu key={i} number={number} text={text} />;
-        })} */}
         <HashLink to="#about">
           <Menu number={1} text="About" />
         </HashLink>
-        <HashLink to='#services'>
+        <HashLink to="#services">
           <Menu number={2} text="Services" />
         </HashLink>
         <HashLink to="#projects">
           <Menu number={3} text="Projects" />
         </HashLink>
-        <HashLink>
+        <HashLink to="#team">
           <Menu number={4} text="Team" />
         </HashLink>
 
-        <HashLink>
+        <HashLink to="#blog">
           <Menu number={5} text="Blog" />
         </HashLink>
       </div>

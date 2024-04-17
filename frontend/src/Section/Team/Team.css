@@ -1,0 +1,198 @@
+.team-section {
+  display: flex;
+  flex-direction: column;
+
+  gap: 46px;
+}
+
+.description-jobtitle {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.job-title-description {
+  display: flex;
+  flex-wrap: wrap;
+}
+.team-description {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 16px;
+}
+.jobtitle-menu-employee-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 59px;
+  margin: auto;
+}
+.job-title-menu-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  /* padding: 60px 0px 60px 0px; */
+}
+.job-title-menu {
+  display: flex;
+  /* flex-direction: column; */
+  margin: 0px -40px 0px -40px;
+
+  /* justify-content: space-between; */
+  gap: 30px;
+  /* padding: 60px 0px 60px 0px; */
+}
+.job-title {
+  list-style-type: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 32px;
+}
+
+.employee-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin: 0px -40px 0px -40px;
+}
+.employee-card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.employee-card {
+  margin: auto;
+}
+.employee {
+  width: 327px;
+  height: 317px;
+}
+.name-position {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 0px 0px 12px 12px;
+  background-color: whitesmoke;
+}
+.emp-name {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+}
+.emp-position {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #b2b2b2;
+}
+
+@media (min-width: 640px) {
+  .team-description {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .job-title-menu {
+    margin: 0px -120px 0px -120px;
+  }
+}
+
+@media (min-width: 768px) {
+  .team-description {
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .employee-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0px -80px;
+  }
+  .job-title-menu {
+    margin: 0px -50px 0px -50px;
+    gap: 60px;
+  }
+  .job-title {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1024px) {
+  .team-section {
+    gap: 56px;
+  }
+  .team-description {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .jobtitle-menu-employee-cards {
+    flex-direction: row;
+    gap: 30px;
+    margin: 0px -20px 0px -20px;
+  }
+  .job-title-menu-container {
+    padding: 144px 0px 144px 0px;
+  }
+  .job-title-menu {
+    flex-direction: column;
+    gap: 80px;
+    /* padding: 144px 0px 144px 0px; */
+    margin: 0px;
+  }
+  .job-title {
+    font-size: 24px;
+  }
+  .employee-card-container {
+    display: flex;
+
+    flex-direction: column;
+    gap: 20px;
+  }
+  .employee-cards {
+    margin: 0px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .team-description {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .jobtitle-menu-employee-cards {
+    flex-direction: row;
+    gap: 30px;
+    margin: 0px -20px 0px -20px;
+  }
+  .job-title-menu-container {
+    padding: 144px 0px 144px 0px;
+  }
+  .job-title-menu {
+    gap: 120px;
+    /* padding: 144px 0px 144px 0px; */
+    margin: 0px;
+  }
+  .job-title {
+    font-size: 24px;
+  }
+  .employee-cards {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+  }
+  .employee-card-container {
+    flex-direction: row;
+    gap: 20px;
+  }
+}
+
+@media (min-width: 1580px) {
+  .team-description {
+    font-size: 30px;
+  }
+  .jobtitle-menu-employee-cards {
+    margin: 0px;
+    gap: 59px;
+  }
+  .employee-cards {
+    gap: 60px;
+  }
+  .employee-card-container {
+    gap: 80px;
+  }
+}

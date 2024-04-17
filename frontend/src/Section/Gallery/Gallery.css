@@ -1,0 +1,82 @@
+.gallery-cards-container{
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    padding-top: 56px;
+}
+.gallery-cards{
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.facade-front{
+    width: 100%;
+    height: 273px;
+    background-image: url('../../assets/facadesfront.png');
+    background-size: cover;
+}
+
+.facade-side{
+    width: 100%;
+    height: 575px;
+    background-image: url('../../assets/facadesside.png');
+    background-size: cover;
+}
+
+.facade-close{
+    width: 100%;
+    height: 370px;
+    background-image: url('../../assets/facadeclose.png');
+    background-size: cover;
+}
+
+.facade-close-img{
+    width: 100%;
+    height: 607px;
+    background-image: url('../../assets/facade.png');
+    background-size: cover;
+}
+
+.glass-panel{
+    width: 100%;
+    height: 572px;
+    background-image: url('../../assets/glasspanel.png');
+    background-size: cover;
+}
+.balcony{
+    width: 100%;
+    height: 572px;
+    background-image: url('../../assets/balconies.png');
+    background-size: cover;
+}
+
+@media (min-width:1280px){
+    .gallery-cards{
+        flex-direction: row;
+    }
+    .facade-front{
+        width: 730px;
+        height: 575px;
+    }
+    .facade-side{
+        width: 378px;
+        height: 575px;
+    }
+    .facade-close{
+        width: 325px;
+        height: 375px;
+    }
+    .facade-close-img{
+        width: 783px;
+        height: 607px;
+    }
+    .glass-panel{
+        width: 604px;
+        height: 572px;
+    }
+    .balcony{
+        width: 514px;
+        height: 572px;
+    }
+}

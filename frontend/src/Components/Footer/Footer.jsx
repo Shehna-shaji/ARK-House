@@ -5,8 +5,11 @@ import "./Footer.css";
 import details from "../../assets/address";
 import Menu from "../Menu/Menu";
 import SocialMediaIcon from "../Social-Media/SocialMediaIcon";
+import menu from "../../assets/menu";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
+  const navigate = useNavigate();
   const Address = ({ address }) => {
     return (
       <span className="footer-text">
@@ -14,9 +17,26 @@ const Footer = () => {
       </span>
     );
   };
+
+  const FooterMenu = (props) => {
+    const { number, text } = props;
+    return (
+      <div className="footer-menu-item">
+        <span className="footer-menu-number">{number}</span>
+
+        <span className="footer-menu-list">
+          <a href="#">{text}</a>
+        </span>
+      </div>
+    );
+  };
   return (
     <footer className="footer">
-      <Heading title="Start a Project?" text="Contact Us" />
+      <Heading
+        title="Start a Project?"
+        text="Contact Us"
+        onclick={() => navigate("/contact")}
+      />
       <div className="footer-container">
         <div className="footer-left">
           <h3 className="footer-title">
@@ -53,7 +73,12 @@ const Footer = () => {
         </div>
       </div>
       <div className="menu-social-media">
-        <Menu />
+        <div className="footer-menu-container">
+          {menu.map(({ number, text }, i) => {
+            return <FooterMenu key={i} number={number} text={text} />;
+          })}
+        </div>
+
         <SocialMediaIcon />
       </div>
       <hr />

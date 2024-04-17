@@ -1,4 +1,4 @@
-@import url(https://db.onlinewebfonts.com/c/1c45e28f8e86cc89876f003b953cc3e9?family=SF+Pro+Text+Regular);
+/* @import url(https://db.onlinewebfonts.com/c/1c45e28f8e86cc89876f003b953cc3e9?family=SF+Pro+Text+Regular); */
 
 .about-section {
   padding: 56px 0px 56px 0px;
@@ -22,7 +22,7 @@
   /* width: 641px; */
   line-height: 34px;
   text-align: center;
-  font-family: "SF Pro Text Regular";
+  
 }
 .description {
   font-weight: 400;
@@ -152,7 +152,7 @@
 
 @media (min-width: 1280px) {
   .about-title {
-    font-size: 40px;
+    font-size: 48px;
     width: 841px;
   }
   .image-container {

@@ -1,0 +1,232 @@
+.project-detail-section {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+.project-menu-text {
+  list-style-type: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 32px;
+  color: #000000;
+}
+.project-menu-hr{
+    border: none;
+    width: 139px;
+    height: 1px;
+    background-color: #000000;
+    margin: 0px -40px 0px -40px;
+}
+.project-cards{
+  /* margin: auto; */
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+.project-card-container{
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+  align-items: center;
+  
+}
+.Fulton-image {
+  width: 350px;
+  height: 350px;
+  background-image: url("../../assets/Fultonlibrary.png");
+  background-size: cover;
+}
+.image-title-place{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.img-year{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #B2B2B2;
+}
+.SaintGiles-image{
+  width: 350px;
+  height: 295px;
+  background-image: url('../../assets/SaintGiles.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Laboratory-image {
+  width: 350px;
+
+  height: 220px;
+  background-image: url("../../assets/StateLaboratory.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.Monson-image {
+  width: 340px;
+  height: 475px;
+  background-image: url("../../assets/MonsonCenter.png");
+  background-size: cover;
+}
+.Ecocenter-image {
+  width: 340px;
+  height: 280px;
+  background-image: url("../../assets/Ecocenter.png");
+  background-size: cover;
+}
+.classroom-image {
+  width: 330px;
+  height: 275px;
+  background-image: url("../../assets/classroombuilding.png");
+  background-size: cover;
+}
+.image-card{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  
+}
+
+
+@media (min-width:640px){
+  .project-list{
+    flex-direction: row;
+    gap: 30px;
+  }
+  .Fulton-image{
+    width:450px;
+    height: 450px;
+  }
+  .SaintGiles-image{
+    width: 480px;
+    height: 500px;
+  }
+  .Laboratory-image{
+    width: 480px;
+    height: 350px;
+  }
+  .Monson-image{
+    width: 450px;
+    height: 550px;
+  }
+  .Ecocenter-image{
+    width: 440px;
+    height: 380px;
+  }
+  .classroom-image{
+    width: 430px;
+    height: 375px;
+  }
+}
+@media(min-width:768px){
+  
+  .project-card-container{
+    /* flex-direction: row; */
+    /* margin: 0px -40px 0px -40px; */
+    align-items: flex-start;
+    margin: auto;
+  }
+  .project-menu-text{
+    font-size: 20px;
+  }
+  .SaintGiles-image{
+    width: 560px;
+    height: 590px;
+  }
+  .Monson-image{
+    width: 560px;
+    height: 600px;
+  }
+  .Fulton-image{
+    width:560px;
+    height: 560px;
+  }
+  .Laboratory-image{
+    width: 560px;
+    height: 380px;
+  }
+  .Ecocenter-image{
+    width: 560px;
+    height: 400px;
+  }
+  .classroom-image{
+    width: 560px;
+    height: 375px;
+  }
+}
+
+@media(min-width:1024px){
+ .project-detail-section{
+  /* flex-direction: row; */
+ }
+  .project-card-container{
+    flex-direction: row;
+  }
+  .project-list{
+    flex-direction: column;
+    gap: 22px;
+  }
+  .project-menu-text{
+    font-size: 24px;
+  }
+  .project-menu-hr{
+    margin: 0px -10px 0px -10px;
+  }
+  .SaintGiles-image{
+    width: 490px;
+    height: 495px;
+  }
+  .Monson-image{
+    width: 440px;
+    height: 580px;
+  }
+  .Fulton-image{
+    width: 320px;
+    height: 320px;
+  }
+  .Laboratory-image{
+    width: 350px;
+    height: 260px;
+  }
+  .Ecocenter-image{
+    width: 350px;
+    height: 350px;
+  }
+  .classroom-image{
+    width: 480px;
+  }
+}
+
+@media(min-width:1280px){
+  .project-detail-section{
+    flex-direction: row;
+    
+  }
+  .SaintGiles-image{
+    width: 590px;
+    height: 495px;
+  }
+  .Laboratory-image{
+    width:568px;
+    height: 354px;
+  }
+  .Monson-image{
+    width: 360px;
+    height: 520px;
+  }
+  .Ecocenter-image{
+    width: 320px;
+    height: 320px;
+  }
+  .classroom-image{
+    width: 618px;
+    height: 420px;
+  }
+}

@@ -20,13 +20,13 @@
   width: 6px;
   height: 16px;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 500;
 
   line-height: 16px;
   color: #000000;
 }
 .menu-list:active {
-  font-weight: 600;
+  font-weight: 500;
 }
 .menu-list {
   font-size: 20px;

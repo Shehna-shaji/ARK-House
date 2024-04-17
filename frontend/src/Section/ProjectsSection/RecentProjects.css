@@ -1,19 +1,18 @@
-@import url(https://db.onlinewebfonts.com/c/1c45e28f8e86cc89876f003b953cc3e9?family=SF+Pro+Text+Regular);
 
 
 .projects-section {
   display: flex;
   flex-direction: column;
+  gap: 56px;
 }
 
 .project-card {
   display: flex;
   flex-direction: column;
   gap: 44px;
-  padding: 56px 0px 0px 0px;
-  
+  /* padding: 56px 0px 0px 0px; */
+
   align-items: center;
-  
 }
 .project-img {
   position: relative;
@@ -21,7 +20,6 @@
   display: flex;
 
   gap: 8px;
-  
 }
 .classroom-img {
   width: 330px;
@@ -30,14 +28,14 @@
   background-size: cover;
 }
 .Monson-img {
-  width: 300px;
+  width: 340px;
   height: 475px;
   background-image: url("../../assets/MonsonCenter.png");
   background-size: cover;
 }
 .Ecocenter-img {
-  width: 284px;
-  height: 271px;
+  width: 340px;
+  height: 280px;
   background-image: url("../../assets/Ecocenter.png");
   background-size: cover;
 }
@@ -45,12 +43,12 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
-  /* margin-top: 61px; */
+  /* margin-top: 30px; */
   align-items: center;
 }
 .number-img {
   width: 140px;
-  height: 121px;
+  height: 101px;
 }
 .img-text {
   font-weight: 700;
@@ -71,18 +69,20 @@
   background-size: cover;
 }
 
-.title-style {
+.title_style {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 24px;
+  color: #000000;
 }
 .place-text {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 24px;
+  color: #000000;
 }
 .Monument-img {
-  width: 304px;
+  width: 320px;
   height: 272px;
   background-image: url("../../assets/MonumentPlaza.png");
   background-size: cover;
@@ -91,15 +91,15 @@
   width: 344px;
   height: 272px;
   background-image: url("../../assets/JordanLine.png");
-  background-size:  cover;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 .Laboratory-img {
-  width: 283px;
-  
-  height: 207px;
+  width: 350px;
+
+  height: 220px;
   background-image: url("../../assets/StateLaboratory.png");
-background-size: cover;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 .Geology-img {
@@ -108,46 +108,45 @@ background-size: cover;
 
   background-image: url("../../assets/Geophysics.png");
   background-size: cover;
-
 }
-.S-Line-img{
+.S-Line-img {
   width: 344px;
   height: 372px;
-  background-image: url('../../assets/S-Line.png');
-  background-size:  cover;
+  background-image: url("../../assets/S-Line.png");
+  background-size: cover;
   background-repeat: no-repeat;
 }
-.title-btn{
+.title-btn {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 56px;
+  /* margin-top: 56px; */
   gap: 24px;
 }
-.start-project{
+.start-project {
   font-weight: 600;
   font-size: 28px;
   line-height: 72px;
-  font-family: "SF Pro Text Regular";
+  
 }
 
-
-@media (min-width:640px){
-  .project-card{
-    
+@media (min-width: 640px) {
+  .project-card {
     align-items: center;
+  }
+  .place-text{
+    font-size: 18px;
   }
   .classroom-img {
     width: 630px;
     height: 575px;
-    
   }
   .Monson-img {
-    width: 378px;
+    width: 500px;
     height: 575px;
   }
   .Ecocenter-img {
-    width: 464px;
+    width: 580px;
     height: 471px;
   }
   .college-img {
@@ -156,45 +155,50 @@ background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
   }
-  .img-text{
+  .img-text {
     font-size: 46px;
   }
   .Fulton-img {
-    width: 325px;
-    height: 371px;
+    width: 565px;
+    height: 571px;
   }
-  
+
   .Monument-img {
-    width: 504px;
+    width: 550px;
     height: 472px;
   }
-  .Laboratory-img{
+  .Laboratory-img {
     width: 583px;
     height: 407px;
     background-size: cover;
   }
-  .Jordan-img{
-    
-  
-      width: 444px;
-      height: 472px;
-  
-  
+  .Jordan-img {
+    width: 560px;
+    height: 472px;
+
     background-size: cover;
   }
-  .S-Line-img{
+  .Geology-img {
+    width: 565px;
+    height: 571px;
+  }
+  
+  .S-Line-img {
     width: 564px;
     height: 472px;
     background-size: cover;
   }
 }
 
-@media (min-width:1024px){
-  .project-card{
+@media (min-width: 1024px) {
+  .projects-section{
+    gap: 50px;
+  }
+  .project-card {
     flex-direction: row;
     margin: auto;
   }
-  .classroom-img{
+  .classroom-img {
     width: 530px;
     height: 475px;
   }
@@ -209,37 +213,40 @@ background-size: cover;
   .Monument-img {
     width: 444px;
     height: 472px;
-}
-.Jordan-img{
-  
+  }
+  .Jordan-img {
     width: 344px;
     height: 372px;
-
-}
-.Ecocenter-img {
-  width: 564px;
-  height: 571.92px;
-}
-.Geology-img {
-  width: 225px;
-  height: 271px;
-}
-.S-Line-img{
-  width: 564px;
-  height: 472px;
-}
-.number-img {
-  width: 240px;
-  height: 251px;
-}
-.title-style{
-  font-size: 20px;
-}
-.start-project{
-  font-size: 38px;
-}
+  }
+  .Fulton-img {
+    width: 325px;
+    height: 371px;
+  }
+  .Ecocenter-img {
+    width: 564px;
+    height: 571.92px;
+  }
+  .Geology-img {
+    width: 225px;
+    height: 271px;
+  }
+  .S-Line-img {
+    width: 564px;
+    height: 472px;
+  }
+  .number-img {
+    width: 240px;
+    height: 151px;
+  }
+  .title_style {
+    font-size: 20px;
+  }
+  .start-project {
+    font-size: 38px;
+  }
 }
 @media (min-width: 1280px) {
+  
   .project-card {
     flex-direction: row;
     gap: 64px;
@@ -252,7 +259,7 @@ background-size: cover;
     width: 378px;
     height: 575px;
   }
-  
+
   .text-container {
     width: 580px;
     height: 505px;
@@ -283,9 +290,8 @@ background-size: cover;
   .Laboratory-img {
     width: 783px;
     height: 607px;
-    
   }
-  .Jordan-img{
+  .Jordan-img {
     width: 504px;
     height: 572px;
   }
@@ -294,18 +300,18 @@ background-size: cover;
     width: 325px;
     height: 371px;
   }
-  .start-project{
+  .S-Line-img {
+    width: 500px;
+    height: 472px;
+  }
+  .start-project {
     font-size: 48px;
   }
-
-
 }
 
-@media (min-width:1580px){
-  .project-card{
-  justify-content: center;
+@media (min-width: 1580px) {
+  .project-card {
+    justify-content: center;
     gap: 10vh;
-    
-
   }
 }

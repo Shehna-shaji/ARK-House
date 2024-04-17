@@ -1,0 +1,11 @@
+@import url(https://db.onlinewebfonts.com/c/1c45e28f8e86cc89876f003b953cc3e9?family=SF+Pro+Text+Regular);
+*{
+    font-family: "SF Pro Text Regular";
+}
+
+@media(min-width:1580px){
+    .history-page{
+        max-width: 1900px;
+        margin: auto;
+    }
+}
