@@ -13,7 +13,7 @@
 
   justify-content: space-between;
 }
-.bg-color {
+.hero-img-container {
   background-color: #F4F4F4;
   background-size: cover;
   position: absolute;
@@ -70,7 +70,7 @@
 }
 
 @media (min-width: 640px) {
-  .bg-color {
+  .hero-img-container {
     top: 150px;
     height: 150px;
   }
@@ -87,7 +87,7 @@
   .hero {
     height: 500px;
   }
-  .bg-color {
+  .hero-img-container {
     top: 198px;
     height: 250px;
   }
@@ -111,7 +111,7 @@
   .hero-left {
     margin: 80px 0px 0px 0px;
   }
-  .bg-color {
+.hero-img-container {
     top: 235px;
     height: 300px;
   }
@@ -135,7 +135,7 @@
     font-size: clamp(1em, 7vw, 8em);
     line-height: 96px;
   }
-  .bg-color {
+  .hero-img-container {
     height: 400px;
     top: 280px;
   }
@@ -155,7 +155,7 @@
     /* font-size: clamp(1em, 7vw, 8em); */
     font-size: clamp(90px, 4vw, 80px);
   }
-  .bg-color {
+  .hero-img-container {
     top: 320px;
 
     /* height: 60vh; */

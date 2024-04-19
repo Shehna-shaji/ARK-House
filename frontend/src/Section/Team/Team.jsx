@@ -6,7 +6,7 @@ import { employeeimages, employees } from "../../assets/Employeecard";
 const Team = () => {
   const Employee = ({ image, name, position }) => {
     return (
-      <span className="employee-card">
+      <div className="employee-card">
         <div className="employee">
           <img src={image} className="employee-img" />
         </div>
@@ -14,7 +14,7 @@ const Team = () => {
           <p className="emp-name">{name}</p>
           <p className="emp-position">{position}</p>
         </div>
-      </span>
+      </div>
     );
   };
   return (
@@ -35,10 +35,15 @@ const Team = () => {
         <div className="jobtitle-menu-employee-cards">
           <div className="job-title-menu-container">
             <ul className="job-title-menu">
-              <li className="job-title" style={{textDecoration:'underline', textUnderlineOffset:'8px'}}>
+              <li
+                className="job-title"
+                style={{
+                  textDecoration: "underline",
+                  textUnderlineOffset: "15px",
+                }}
+              >
                 Management
                 {/* <hr className="team-menu-hr"/> */}
-                
               </li>
               <li className="job-title">Architects</li>
               <li className="job-title">Engineers</li>

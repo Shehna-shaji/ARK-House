@@ -12,7 +12,7 @@ import { useNavigate } from "react-router-dom";
 const Service = () => {
   const navigate = useNavigate();
   const [image, setImage] = useState(architecture);
-  const [isFocused, setIsfocused] = useState(null);
+  const [isFocused, setIsfocused] = useState(architecture);
 
   const img1 = architecture;
   const img2 = landscape;
@@ -48,7 +48,6 @@ const Service = () => {
                 className={
                   isFocused === img1 ? "menu-text" : "service-menu-text"
                 }
-                style={{ listStyleType: "none" }}
               >
                 Architecture{" "}
               </li>
@@ -57,7 +56,6 @@ const Service = () => {
                 className={
                   isFocused === img2 ? "menu-text" : "service-menu-text"
                 }
-                style={{ listStyleType: "none" }}
               >
                 Landscape{" "}
               </li>
@@ -66,7 +64,6 @@ const Service = () => {
                 className={
                   isFocused === img3 ? "menu-text" : "service-menu-text"
                 }
-                style={{ listStyleType: "none" }}
               >
                 Interior{" "}
               </li>
@@ -76,7 +73,6 @@ const Service = () => {
                 className={
                   isFocused === img4 ? "menu-text" : "service-menu-text"
                 }
-                style={{ listStyleType: "none" }}
               >
                 Design{" "}
               </li>

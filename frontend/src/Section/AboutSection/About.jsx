@@ -8,6 +8,20 @@ import image3 from "../../assets/Image3.png";
 import Button from "../../Components/Button/Button";
 
 const About = () => {
+  const data = [
+    {
+      photo: image,
+      className: "about-img",
+    },
+    {
+      photo: image2,
+      className: "building-img",
+    },
+    {
+      photo: image3,
+      className: "about-pic",
+    },
+  ];
   const navigate = useNavigate();
   const Images = ({ photo, className }) => {
     return (
@@ -31,9 +45,9 @@ const About = () => {
         </div>
       </div>
       <div className="image-container">
-        <Images photo={image} className="about-img" />
-        <Images photo={image2} className="building-img" />
-        <Images photo={image3} className="about-pic" />
+        {data.map(({ photo, className }, i) => {
+          return <Images key={i} photo={photo} className={className} />;
+        })}
       </div>
       <div className="section-description">
         <p className="description-text">

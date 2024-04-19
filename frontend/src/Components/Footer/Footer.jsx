@@ -42,7 +42,7 @@ const Footer = () => {
           <h3 className="footer-title">
             Support is available <br /> 24 hours
           </h3>
-          <Button text="Contact Us" />
+          <Button text="Contact Us" onclick={()=>navigate('/contact')}/>
         </div>
         <div className="footer-right">
           {details.map((data) => {
@@ -50,7 +50,7 @@ const Footer = () => {
               <div key={data.id}>
                 {data.address.map((contact) => {
                   return (
-                    <div className="address">
+                    <div className="address" key={data.id}>
                       <p>{contact.direction}</p>
                       <p>{contact.name}</p>
                       <p>{contact.unitno}</p>

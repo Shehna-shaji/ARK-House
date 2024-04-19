@@ -113,6 +113,9 @@
 }
 
 @media(min-width:1580px){
+  .image-info-section{
+    margin: auto;
+  }
   .container-heading{
     font-size: 20px;
   }
@@ -138,6 +141,7 @@
     font-size: 18px;
   }
   .image-info{
-    font-size: 30px;
+    font-size: 36px;
+    line-height: 38px;
   }
 }

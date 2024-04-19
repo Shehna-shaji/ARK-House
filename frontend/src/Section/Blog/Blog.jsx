@@ -6,7 +6,7 @@ import { blog } from "../../assets/blog";
 const Blog = () => {
   const Blog = ({ image, date, title, content }) => {
     return (
-      <span className="blog-card">
+      <div className="blog-card">
         <div className="blog-image">
           <img src={image} className="blog-img" />
         </div>
@@ -15,7 +15,7 @@ const Blog = () => {
           <p className="blog-title">{title}</p>
           <p className="blog-content">{content}</p>
         </div>
-      </span>
+      </div>
     );
   };
   return (

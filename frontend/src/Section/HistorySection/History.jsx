@@ -10,7 +10,7 @@ const History = () => {
         <figure>
           <img src={historyimage} className="history-img" />
         </figure>
-        <figcaption className="history-content">
+        <article className="history-content">
           For over four decades, ARK House, founded by renowned architect John
           Smith in 1975, has been a leader in the industry known for its
           innovative designs and commitment to client satisfaction. The agency's
@@ -22,7 +22,7 @@ const History = () => {
           adaptation to new trends and technologies. Today, ARK House continues
           to push boundaries in architecture while setting new standards for
           innovation and excellence.
-        </figcaption>
+        </article>
       </div>
     </section>
   );

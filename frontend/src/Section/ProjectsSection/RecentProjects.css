@@ -28,13 +28,13 @@
   background-size: cover;
 }
 .Monson-img {
-  width: 340px;
+  width: 310px;
   height: 475px;
   background-image: url("../../assets/MonsonCenter.png");
   background-size: cover;
 }
 .Ecocenter-img {
-  width: 340px;
+  width: 310px;
   height: 280px;
   background-image: url("../../assets/Ecocenter.png");
   background-size: cover;
@@ -63,7 +63,7 @@
   background-size: cover;
 }
 .college-img {
-  width: 340px;
+  width: 310px;
   height: 307px;
   background-image: url("../../assets/AgricultureCollege.png");
   background-size: cover;
@@ -88,14 +88,14 @@
   background-size: cover;
 }
 .Jordan-img {
-  width: 344px;
+  width: 314px;
   height: 272px;
   background-image: url("../../assets/JordanLine.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
 .Laboratory-img {
-  width: 350px;
+  width: 320px;
 
   height: 220px;
   background-image: url("../../assets/StateLaboratory.png");
@@ -110,7 +110,7 @@
   background-size: cover;
 }
 .S-Line-img {
-  width: 344px;
+  width: 314px;
   height: 372px;
   background-image: url("../../assets/S-Line.png");
   background-size: cover;
@@ -138,8 +138,8 @@
     font-size: 18px;
   }
   .classroom-img {
-    width: 630px;
-    height: 575px;
+    width: 600px;
+    height: 555px;
   }
   .Monson-img {
     width: 500px;
@@ -187,6 +187,13 @@
     width: 564px;
     height: 472px;
     background-size: cover;
+  }
+}
+
+@media(min-width:768px){
+  .classroom-img{
+    width: 630px;
+    height: 575px;
   }
 }
 

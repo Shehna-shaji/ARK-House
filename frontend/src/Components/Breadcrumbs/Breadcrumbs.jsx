@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
-import arrow from '../../assets/arrow.png'
-import './Breadcrumbs.css'
+import arrow from "../../assets/arrow.png";
+import "./Breadcrumbs.css";
 
 const Breadcrumbs = () => {
   const location = useLocation();
@@ -20,9 +20,11 @@ const Breadcrumbs = () => {
       );
     });
 
-  console.log(location);
-  return <div className="breadcrumbs">
-    HOME <img src={arrow} className="crumbs-arrow"/> {crumbs}</div>;
+  return (
+    <div className="breadcrumbs">
+      HOME <img src={arrow} className="crumbs-arrow" /> {crumbs}
+    </div>
+  );
 };
 
 export default Breadcrumbs;

@@ -10,9 +10,7 @@ export default function Menu() {
       <div>
         <span className="menu-number">{number}</span>
 
-        <span className="menu-list">
-          <a href="#">{text}</a>
-        </span>
+        <span className="menu-list">{text}</span>
       </div>
     );
   };

@@ -1,12 +1,10 @@
 @import url(https://db.onlinewebfonts.com/c/1c45e28f8e86cc89876f003b953cc3e9?family=SF+Pro+Text+Regular);
 
-
 .footer-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin-top: 56px;
-  
 }
 .footer-left {
   display: flex;
@@ -24,8 +22,7 @@
   font-size: 18px;
   line-height: 28px;
   color: #000000;
-  
-  
+
   width: 276px;
 }
 .footer-right {
@@ -49,7 +46,7 @@
   text-align: left;
   font-family: "SF Pro Text Regular";
 }
-.whitespace{
+.whitespace {
   display: none;
 }
 .menu-social-media {
@@ -60,25 +57,25 @@
   margin-bottom: 56px;
   width: 100%;
 }
-.footer-menu-container{
+.footer-menu-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   /* display: flex;
   flex-direction: column; */
   gap: 10px;
 }
-.footer-menu-item{
+.footer-menu-item {
   display: flex;
   gap: 32px;
 }
-.footer-menu-list a{
+.footer-menu-list a {
   text-decoration: none;
   color: #000000;
 }
-.footer-menu-number{
+.footer-menu-number {
   font-size: 12px;
 }
-.footer-menu-list{
+.footer-menu-list {
   font-size: 12px;
 }
 .copy-right-privacy {
@@ -113,58 +110,48 @@
   color: #000000;
 }
 
-
-
-@media (min-width:640px){
-  
-    .footer-left{
-      flex-direction: row;
-        /* margin-right: 100px; */
-        /* width: 376px; */
-        /* width: 30%; */
-        align-items: flex-start;
-        justify-content: space-between;
-    }
-    .footer-title{
-        font-size: 20px;
-    }
-    .footer-right{
-        
+@media (min-width: 640px) {
+  .footer-left {
+    flex-direction: row;
+    /* margin-right: 100px; */
+    /* width: 376px; */
+    /* width: 30%; */
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .footer-title {
+    font-size: 20px;
+  }
+  .footer-right {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 40px;
-        /* width: 100%; */
-        margin: 0px;
-    
-    }
-    .address{
-        font-size: 10px;
-    }
-    .footer-menu-container{
-      display: flex;
-      gap: 12px;
-    }
-    .footer-menu-item{
-      flex-direction: column;
-      gap: 12px;
-    }
-    .footer-menu-number{
-      font-size: 14px;
-    }
-    .footer-menu-list{
-      font-size: 14px;
-    }
+    /* width: 100%; */
+    margin: 0px;
+  }
+  .address {
+    font-size: 10px;
+  }
+  .footer-menu-container {
+    display: flex;
+    gap: 12px;
+  }
+  .footer-menu-item {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .footer-menu-number {
+    font-size: 14px;
+  }
+  .footer-menu-list {
+    font-size: 14px;
+  }
 }
 
 @media (min-width: 768px) {
-    .footer-left{
-        /* width: 100%; */
-        /* margin-right: 100px; */
-        
-    }
-    .footer-title{
-        font-size: 24px;
-    }
+  .footer-title {
+    font-size: 24px;
+  }
   .footer-right {
     /* flex-direction: row; */
     display: grid;
@@ -173,16 +160,16 @@
     /* width: 100%; */
     margin-top: 40px;
   }
-  .address{
+  .address {
     font-size: 12px;
   }
-  .footer-menu-container{
+  .footer-menu-container {
     gap: 16px;
   }
-  .footer-menu-item{
+  .footer-menu-item {
     gap: 22px;
   }
-  .footer-menu-list{
+  .footer-menu-list {
     font-size: 20px;
   }
   .copy-right-text h6 {
@@ -194,7 +181,7 @@
 }
 
 @media (min-width: 1024px) {
-  .footer-container{
+  .footer-container {
     display: flex;
     flex-direction: row;
   }
@@ -203,7 +190,7 @@
     margin-right: 40px;
     margin-bottom: 64px;
     flex-direction: column;
-    
+
     justify-content: center;
     /* width: 40%; */
   }
@@ -218,50 +205,46 @@
     /* gap: 64px; */
     width: 702px;
   }
-  .address{
+  .address {
     font-size: 12px;
     line-height: 23px;
   }
-  .whitespace{
+  .whitespace {
     display: block;
   }
-  .footer-menu-number{
+  .footer-menu-number {
     font-size: 16px;
   }
-  .copy-right-privacy{
+  .copy-right-privacy {
     margin-top: 56px;
   }
-  hr{
+  hr {
     margin: 0px -100px 0px -100px;
-    
   }
 }
 
-@media (min-width:1280px){
-    .footer-left {
-      
-        /* margin-top: 56px; */
-        margin-right: 188px;
-        margin-bottom: 64px;
-        width: 40%;
-      }
-      .footer-title {
-        font-size: 38px;
-        line-height: 48px;
-        width: 376px;
-      }
-      .footer-right {
-        display: flex;
-        flex-direction: row;
-        gap: 64px;
-        width: 702px;
-      }
-      .address{
-        font-size: 12px;
-        line-height: 23px;
-      }
-
-
+@media (min-width: 1280px) {
+  .footer-left {
+    /* margin-top: 56px; */
+    margin-right: 188px;
+    margin-bottom: 64px;
+    width: 40%;
+  }
+  .footer-title {
+    font-size: 38px;
+    line-height: 48px;
+    width: 376px;
+  }
+  .footer-right {
+    display: flex;
+    flex-direction: row;
+    gap: 64px;
+    width: 702px;
+  }
+  .address {
+    font-size: 12px;
+    line-height: 23px;
+  }
 }
 
 @media (min-width: 1580px) {

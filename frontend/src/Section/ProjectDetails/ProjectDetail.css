@@ -38,7 +38,7 @@
   
 }
 .Fulton-image {
-  width: 350px;
+  width: 310px;
   height: 350px;
   background-image: url("../../assets/Fultonlibrary.png");
   background-size: cover;
@@ -55,14 +55,14 @@
   color: #B2B2B2;
 }
 .SaintGiles-image{
-  width: 350px;
+  width: 310px;
   height: 295px;
   background-image: url('../../assets/SaintGiles.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
 .Laboratory-image {
-  width: 350px;
+  width: 310px;
 
   height: 220px;
   background-image: url("../../assets/StateLaboratory.png");
@@ -70,19 +70,19 @@
   background-repeat: no-repeat;
 }
 .Monson-image {
-  width: 340px;
+  width: 310px;
   height: 475px;
   background-image: url("../../assets/MonsonCenter.png");
   background-size: cover;
 }
 .Ecocenter-image {
-  width: 340px;
+  width: 310px;
   height: 280px;
   background-image: url("../../assets/Ecocenter.png");
   background-size: cover;
 }
 .classroom-image {
-  width: 330px;
+  width: 310px;
   height: 275px;
   background-image: url("../../assets/classroombuilding.png");
   background-size: cover;
@@ -210,12 +210,12 @@
     
   }
   .SaintGiles-image{
-    width: 590px;
+    width: 560px;
     height: 495px;
   }
   .Laboratory-image{
-    width:568px;
-    height: 354px;
+    width:468px;
+    height: 334px;
   }
   .Monson-image{
     width: 360px;
@@ -226,7 +226,7 @@
     height: 320px;
   }
   .classroom-image{
-    width: 618px;
-    height: 420px;
+    width: 488px;
+    height: 400px;
   }
 }

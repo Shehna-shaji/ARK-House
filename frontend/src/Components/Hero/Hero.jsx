@@ -27,7 +27,7 @@ const Hero = () => {
           </div>
         </div>
       </div>{" "}
-      <div className="bg-color">
+      <div className="hero-img-container">
         <img src={heroimage} className="hero-img" />
         {/* <div className="background">
         

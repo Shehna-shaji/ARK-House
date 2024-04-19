@@ -3,6 +3,7 @@ import Heading from "../../Components/Section-Heading/Heading";
 import imagelogo from "../../assets/imagelogo.png";
 import { gallery, gallerycollection, photos } from "../../assets/gallery";
 import "./Gallery.css";
+import { useNavigate } from "react-router-dom";
 
 const Gallery = () => {
   const styles = {
@@ -11,8 +12,9 @@ const Gallery = () => {
     position: "absolute",
   };
   const Gallery = ({ name, place, className, title_style, place_style }) => {
+    
     return (
-      <span className="image-card">
+      <div className="image-card">
         <div className="project-img">
           <img className={className} />
 
@@ -22,12 +24,13 @@ const Gallery = () => {
           <p className={title_style}>{name}</p>
           <p className={place_style}>{place}</p>
         </div>
-      </span>
+      </div>
     );
   };
+  const navigate=useNavigate()
   return (
     <div className="gallery-section">
-      <Heading title="Gallery" text="Contact Us" />
+      <Heading title="Gallery" text="Contact Us" onclick={()=>navigate('/contact')}/>
       <div className="gallery-cards-container">
         <div className="gallery-cards">
           {gallerycollection.map(

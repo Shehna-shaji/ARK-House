@@ -2,11 +2,12 @@ import React from "react";
 import Heading from "../../Components/Section-Heading/Heading";
 import "./DevelopmentTeam.css";
 import { employees, engineers } from "../../assets/Employeecard";
+import { useNavigate } from "react-router-dom";
 
 const DevelopmentTeam = () => {
   const Employee = ({ image, name, position }) => {
     return (
-      <span className="employee-card">
+      <div className="employee-card">
         <div className="employee">
           <img src={image} className="employee-img" />
         </div>
@@ -14,12 +15,17 @@ const DevelopmentTeam = () => {
           <p className="emp-name">{name}</p>
           <p className="emp-position">{position}</p>
         </div>
-      </span>
+      </div>
     );
   };
+  const navigate = useNavigate();
   return (
     <div className="development-team">
-      <Heading title="Development Team" text="Contact Us" />
+      <Heading
+        title="Development Team"
+        text="Contact Us"
+        onclick={() => navigate("/contact")}
+      />
       <div className="team">
         <div className="team-menu-container">
           <ul className="team-menu">

@@ -22,7 +22,7 @@ const RecentProjects = () => {
   };
   const Projects = ({ name, place, className, title_style, place_style }) => {
     return (
-      <span className="image-card">
+      <div className="image-card">
         <div className="project-img">
           <img className={className} />
 
@@ -32,7 +32,7 @@ const RecentProjects = () => {
           <p className={title_style}>{name}</p>
           <p className={place_style}>{place}</p>
         </div>
-      </span>
+      </div>
     );
   };
   return (

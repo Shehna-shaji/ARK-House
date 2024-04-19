@@ -11,12 +11,14 @@ import Projects from "./Pages/Projects/Projects";
 import Breadcrumbs from "./Components/Breadcrumbs/Breadcrumbs";
 import CentralSaintGiles from "./Pages/Central Saint Giles/CentralSaintGiles";
 import Contact from "./Pages/Contact Page/Contact";
+import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
 
 export default function App() {
   return (
     <div>
       <BrowserRouter>
         <MaxWidthWrapper>
+          <ScrollToTop/>
           <Header />
 
           <Routes>
