@@ -23,6 +23,7 @@ const Service = () => {
     setImage(imageName);
     setIsfocused(imageName);
   };
+ 
 
   return (
     <div id="services" className="service-section">

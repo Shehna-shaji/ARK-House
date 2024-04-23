@@ -9,14 +9,14 @@ import Blog from '../../Section/Blog/Blog';
 
 const Home = () => {
   return (
-    <header className='parent'>
+    <div className='parent'>
       <Hero/>
       <About/>
       <Service/>
       <RecentProjects/>
       <Team/>
       <Blog/>
-    </header>
+    </div>
   )
 }
 
